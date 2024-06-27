@@ -31,7 +31,7 @@ public class CoreJava1 {
         boolean b = true;
         int num3 = 585; // this is base 10;
         int num4 = 0b101; // this is base 2; 101 is 5;
-        // 2^2  2^1  2^0 -> hence is 5;
+        // 2^2  2^1  2^0 -> multiply the respective bit with ea power of 2: hence is 5;
         int num5 = 0x7e; // hexadecimal;
         int num6 = 100_000_000;
         double num7 = 56; // auto convert to double
