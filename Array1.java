@@ -33,6 +33,14 @@ public class Array1 {
             System.out.println();
         }
         // row traversal
+
+        for(int n[]: nums3){                //data type is an array
+            for(int m : n){                 //data type is int
+                System.out.print(m + " ");
+            }
+            System.out.println();
+        }
+        
     }
 
 }
