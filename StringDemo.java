@@ -23,6 +23,9 @@ public class StringDemo {
         // when concat string, we create new object and giving new memory address
         // The old string that is no longer used after concat - will be eligible for garbage collection to get memory back
         // Strings are generally immutable - once u create the object, u cant change it
+
+        // But if the Strings are compiled separately in diff JAR files, they would not be same object
+
     }
 
 }
