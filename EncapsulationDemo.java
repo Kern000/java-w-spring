@@ -6,7 +6,7 @@
 // private only accessible in same class
 
 class Human {
-    
+
     private int age;
     private String name;
     // if no constructor, will provide default value of 0 for int, null for obj.
@@ -37,6 +37,11 @@ class Human {
     public void setName(String name){
         this.name = name;
     }
+
+    public void setName(String name, Human obj){
+        Human obj1 = obj;
+        obj1.name = name;
+    }
 }
 
 public class EncapsulationDemo {
@@ -51,5 +56,10 @@ public class EncapsulationDemo {
         System.out.println(human2.getAge());
         System.out.println(human2.getName());
 
+        Human human3 = new Human();
+        human3.setAge(40);
+        human3.setName("Moo", human3);
+        System.out.println(human3.getAge());
+        System.out.println(human3.getName());
     }
 }
