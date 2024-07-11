@@ -17,6 +17,9 @@ class Mobile{
         // name = "Phone"; This will save the initialization of static variable everytime
         System.out.println("In constructor block");
     }
+    // note that constructor doesn't have return type
+    // It is specific in using the same name and casing as the Class
+    // It purpose isnt to return a value, but to initialize objects
 
     public void show(){
         System.out.println(brand + ": " + price + ": " + name);
